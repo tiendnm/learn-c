@@ -1,7 +1,14 @@
 #include <stdio.h>
 
+void gan(int *a)
+{
+  *a = 10;
+}
+
 int main()
 {
-  printf("Hello World\n");
+  int a = 0;
+  gan(&a);
+  printf("%d\n", a);
   return 0;
 }
